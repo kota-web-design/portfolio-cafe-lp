@@ -1,314 +1,319 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AFTER 6 | 夜にひらくワークカフェ</title>
-  <meta name="description" content="夜にひらくワークカフェ AFTER 6。静かな時間と香り高いコーヒーで、集中できる空間を提供します。" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<meta property="og:title" content="AFTER 6 | 夜にひらくワークカフェ">
-<meta property="og:description" content="夜にひらくワークカフェ AFTER 6。静かな時間と香り高いコーヒーで、集中できる空間を提供します。">
-<meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カフェLPテンプレート | Cafe Terrace</title>
+  <meta name="description" content="カフェ向けLPテンプレート。コンセプト、メニュー、ギャラリー、アクセス、FAQまで備えたスマホ対応のHTML/CSS実装済みランディングページです。">
+
+  <!-- OGP（テンプレ販売用） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="カフェLPテンプレート | Cafe Terrace">
+  <meta property="og:description" content="カフェの世界観と来店導線を整えた、スマホ対応のHTML/CSS実装済みLPテンプレートです。">
+  <meta property="og:url" content="https://kota-web-design.github.io/cafe-lp-template/">
+  <meta property="og:image" content="https://kota-web-design.github.io/cafe-lp-template/img/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ===== Header ===== -->
+
+
+<!-- ================= Header ================= -->
 <header class="header">
-  <div class="container">
-    <h1 class="logo">AFTER 6</h1>
+  <div class="container header-inner">
+    <!-- ▼ 店舗名を変更 -->
+    <a href="#" class="logo">Cafe Terrace</a>
 
-    <!-- ハンバーガー -->
-   <div class="hamburger"
-     id="hamburger"
-     aria-label="メニューを開く"
-     aria-expanded="false">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-    <!-- ナビ -->
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#concept">Concept</a></li>
-        <li><a href="#space">Space</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#community">Community</a></li>
-        <li><a href="#access">Access</a></li>
-      </ul>
+    <nav class="nav-menu" id="navMenu" aria-label="メインナビゲーション"> 
+      <a href="#concept">Concept</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#access">Access</a>
+      <a href="#faq">FAQ</a>
     </nav>
+
+   <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-controls="navMenu" aria-expanded="false"> 
+      <span></span>
+      <span></span>
+      <span></span>
+   </button>
   </div>
 </header>
 
-  <main>
+<!-- ================= Hero ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <!-- ▼ キャッチコピー編集 -->
+    <p>一杯のコーヒーで、日常に彩りを。</p>
+    <h1>Moments of Peace</h1>
 
-    <!-- ===== Hero ===== -->
-  <section class="hero">
-  <div class="hero-inner">
-    <h2>夜にひらく、もうひとつの仕事場。</h2>
-    <p>静かな灯りとコーヒーの香りが、集中を深める。</p>
-    <a href="#access" class="btn">店舗情報を見る</a>
+    <!-- ▼ CTAリンク編集 -->
+    <a href="#menu" class="btn">メニューを見る</a>
   </div>
 </section>
 
-    <!-- ===== Concept ===== -->
-<section id="concept" class="concept">
-  <div class="container concept-inner">
-    <h2>Concept</h2>
-    <p>
-      AFTER 6 は、仕事終わりの時間を心地よく過ごせる夜型ワークカフェ。
-      静かな空間と電源完備の席で、自分だけの集中時間を。
+<!-- ================= Concept ================= -->
+<section id="concept" class="section container">
+
+  <h2 class="section-title">Concept</h2>
+
+  <div class="concept-flex">
+
+    <div class="concept-image">
+      <!-- ▼ 画像差し替え -->
+      <img src="img/concept.jpg" alt="自然光が差し込む木目調の落ち着いたカフェ店内" loading="lazy">
+    </div>
+
+    <div class="concept-text">
+      <h2 class="section-heading">
+  心ほどける、<br class="sp-only">贅沢なひとときを。
+</h2>
+
+      <p class="concept-lead">
+        慌ただしい日常から少しだけ離れ、<br class="sp-only">
+        木の温もりとやわらかな自然光に<br class="sp-only">包まれる空間。
+      </p>
+
+      <p>
+        厳選された豆を丁寧に抽出するハンドドリップ<br class="sp-only">コーヒーと、<br class="pc-only">地元食材を活かした自家製スイーツ。<br>
+        香り、音、光、そのすべてが重なり合い、<br class="sp-only">あなたの特別な時間を<br class="pc-only">そっと彩ります。
+      </p>
+    </div>                                   
+
+  </div>
+</section>
+
+<!-- ================= Menu ================= -->
+<section id="menu" class="section menu-section">
+  <div class="container">
+
+    <h2 class="section-title">Menu</h2>
+
+    <div class="menu-category">
+
+      <!-- ===== DRINK ===== -->
+      <div class="menu-block">
+        <div class="menu-text">
+          <span class="menu-label">DRINK</span>
+          <h3>こだわりのコーヒー</h3>
+          <p>
+            厳選した豆を使用し、一杯ずつ丁寧に抽出。<br>
+            豊かな香りと深い味わいをお楽しみください。
+          </p>
+
+          <ul class="menu-list">
+            <li>Special Blend <span>¥550</span></li>
+            <li>Cafe Latte <span>¥600</span></li>
+            <li>Seasonal Blend <span>¥650</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-images">
+          <img src="img/menu-drink1.jpg" alt="店内でハンドドリップしているコーヒー" loading="lazy">
+          <img src="img/menu-drink2.jpg" alt="店内で提供されるラテアートのカフェラテ" loading="lazy">
+        </div>
+      </div>
+
+      <!-- ===== FOOD ===== -->
+      <div class="menu-block reverse">
+        <div class="menu-text">
+          <span class="menu-label">FOOD</span>
+          <h3>こだわりのフード</h3>
+          <p>
+            地元食材を活かした軽食やプレートメニュー。<br>
+            コーヒーとの相性を大切にしています。
+          </p>
+
+          <ul class="menu-list">
+            <li>Grilled Sandwich <span>¥850</span></li>
+            <li>Morning Plate <span>¥980</span></li>
+            <li>Seasonal Salad <span>¥780</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-images">
+          <img src="img/menu-food1.jpg" alt="グリルサンドとサラダのプレート" loading="lazy">
+          <img src="img/menu-food2.jpg" alt="トーストと目玉焼きのモーニングプレート" loading="lazy">
+        </div>
+      </div>
+
+      <!-- ===== DESSERT ===== -->
+      <div class="menu-block">
+        <div class="menu-text">
+          <span class="menu-label">DESSERT</span>
+          <h3>自家製スイーツ</h3>
+          <p>
+            店内で丁寧に仕上げた季節のスイーツ。<br>
+            コーヒーとともに特別なひとときを。
+          </p>
+
+          <ul class="menu-list">
+            <li>Cheesecake <span>¥650</span></li>
+            <li>Seasonal Tart <span>¥700</span></li>
+            <li>Pudding <span>¥600</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-images">
+          <img src="img/menu-dessert1.jpg" alt="ベリーを添えたチーズケーキ" loading="lazy">
+          <img src="img/menu-dessert2.jpg" alt="フルーツをたっぷりのせた季節のタルトとバニラアイス" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Gallery ================= -->
+<section class="gallery-section">
+  
+
+    <h2 class="section-title">Gallery</h2>
+
+    <p class="gallery-lead">
+      店内の空気感や、日常のひとときを切り取った一枚。<br>
+      心地よい時間を感じていただけます。
     </p>
-  </div>
+
+    <div class="gallery-grid">
+      <img src="img/gallery1.jpg" alt="自然光が差し込む木目調の落ち着いたカフェ店内" loading="lazy">
+      <img src="img/gallery2.jpg" alt="自然光が差し込む木製カウンター席のある落ち着いたカフェ店内" loading="lazy">
+      <img src="img/gallery3.jpg" alt="ステンレスケトルからお湯を注ぐハンドドリップコーヒーの様子" loading="lazy">
+      <img src="img/gallery4.jpg" alt="ハート模様のラテアートが描かれたカフェラテ" loading="lazy">
+      <img src="img/gallery5.jpg" alt="スクランブルエッグやベーコン、サラダが盛り付けられたモーニングプレート" loading="lazy">
+      <img src="img/gallery6.jpg" alt="レタスやトマトを挟んだサンドイッチとポテトチップスのプレート" loading="lazy">
+      <img src="img/gallery7.jpg" alt="いちごとブルーベリーがのった自家製チーズケーキ" loading="lazy">
+      <img src="img/gallery8.jpg" alt="キャンドルの灯りがともる落ち着いた夜のカフェ店内" loading="lazy">
+    </div>
+
+  
 </section>
 
-<!-- ===== Space ===== -->
-<section id="space" class="space">
+<!-- ================= Access ================= -->
+<section id="access" class="access-section">
+
+  <h2 class="section-title access-title">Access</h2>
+
+  <div class="access-inner">
+
+    <div class="access-info">
+
+      <div class="access-item">
+        <span class="access-label">Address</span>
+        <p>東京都〇〇区△△町1-2-3</p>
+      </div>
+
+      <div class="access-item">
+        <span class="access-label">Tel</span>
+        <p><a href="tel:0312345678">03-1234-5678</a></p>
+      </div>
+
+      <div class="access-item">
+        <span class="access-label">Open</span>
+        <p>10:00 - 19:00</p>
+      </div>
+
+    </div>
+
+    <div class="map-frame">
+      <iframe 
+        src="https://www.google.com/maps?q=東京駅&output=embed"
+        title="Cafe Terraceの周辺地図"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="faq-section container">
+
+  <h2 class="section-title">FAQ</h2>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">
+      <span>予約は可能ですか？</span>
+      <span class="faq-icon">＋</span>
+    </button>
+    <div class="faq-answer">
+      <p>お電話にて承っております。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false"> 
+      <span>駐車場はありますか？</span>
+      <span class="faq-icon">＋</span>
+    </button>
+    <div class="faq-answer">
+      <p>近隣にコインパーキングがございます。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false"> 
+      <span>テイクアウトはできますか？</span>
+      <span class="faq-icon">＋</span>
+    </button>
+    <div class="faq-answer">
+      <p>一部メニューで対応しております。詳しくはスタッフまでお尋ねください。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false">
+      <span>クレジットカードは使えますか？</span>
+      <span class="faq-icon">＋</span>
+    </button>
+    <div class="faq-answer">
+      <p>各種クレジットカード・電子マネーをご利用いただけます。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+   <button class="faq-question" aria-expanded="false"> 
+      <span>子ども連れでも利用できますか？</span>
+      <span class="faq-icon">＋</span>
+    </button>
+    <div class="faq-answer">
+      <p>もちろん可能です。ベビーカーでのご来店も歓迎しております。</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
   <div class="container">
+    <h2 class="cta-title">ご来店をお待ちしております</h2>
+    <p class="cta-sub">お気軽にお電話ください</p>
 
-    <div class="section-header">
-  <h2>SPACE</h2>
-</div>
-
-    <div class="space-grid">
-
-      <!-- Left -->
-      <div class="space-item">
-        <img src="img/space01.jpg" alt="電源席">
-
-        <div class="space-text">
-          <h3>電源席</h3>
-          <p>
-            コンセント完備。静かな環境で、
-            仕事や作業に集中できる空間です。
-          </p>
-        </div>
-      </div>
-
-      <!-- Right -->
-      <div class="space-item">
-        <img src="img/space02.jpg" alt="共有テーブル">
-
-        <div class="space-text">
-          <h3>共有テーブル席</h3>
-          <p>
-            落ち着いた照明と広いテーブル。
-            少人数での利用にも最適です。
-          </p>
-        </div>
-      </div>
-
-    </div>
-
+    <a href="tel:0312345678" class="btn btn-white cta-btn">
+      電話で予約する
+    </a>
   </div>
 </section>
 
-    <!-- ===== Menu ===== -->
-<section id="menu" class="menu">
-  <div class="container menu-inner">
-
-    <!-- 左：メニューリスト -->
-    <div class="menu-left fade-up">
-
-      <h2>Menu</h2>
-
-      <div class="menu-columns">
-
-        <!-- Coffee -->
-        <div class="menu-list">
-          <h3>Coffee</h3>
-          <ul>
-            <li><span>Espresso</span><span>¥500</span></li>
-            <li><span>Americano</span><span>¥550</span></li>
-            <li><span>Hand Drip</span><span>¥650</span></li>
-            <li><span>Cafe Latte</span><span>¥650</span></li>
-            <li><span>Cappuccino</span><span>¥650</span></li>
-            <li><span>Mocha</span><span>¥700</span></li>
-            <li><span>Flat White</span><span>¥680</span></li>
-            <li><span>Affogato</span><span>¥750</span></li>
-          </ul>
-        </div>
-
-        <!-- Food -->
-        <div class="menu-list">
-          <h3>Food</h3>
-          <ul>
-            <li><span>Quiche Plate</span><span>¥750</span></li>
-            <li><span>Cheese Toast</span><span>¥680</span></li>
-            <li><span>Brownie</span><span>¥600</span></li>
-            <li><span>Basque Cheesecake</span><span>¥720</span></li>
-            <li><span>Tiramisu</span><span>¥720</span></li>
-            <li><span>Mixed Nuts</span><span>¥500</span></li>
-            <li><span>Dark Chocolate</span><span>¥480</span></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 右：ギャラリー -->
-    <div class="menu-right fade-up">
-
-      <div class="menu-gallery-large">
-        <img src="img/espresso.jpg" alt="エスプレッソ">
-      </div>
-
-      <div class="menu-gallery-grid">
-        <img src="img/drip.jpg" alt="ハンドドリップ">
-        <img src="img/latte.jpg" alt="ラテアート">
-        <img src="img/quiche.jpg" alt="キッシュ">
-        <img src="img/brownie.jpg" alt="ブラウニー">
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== Community ===== -->
-<section id="community" class="community">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Community</h2>
-      <span class="line"></span>
-    </div>
-
-    <div class="community-inner">
-
-      <!-- Left Text -->
-      <div class="community-text">
-        <h3>夜に集う、静かなつながり。</h3>
-        <p>
-          AFTER 6 は、仕事終わりのひとときに
-          それぞれが静かに時間を過ごせる場所。
-        </p>
-        <p>
-          ノートを開く人、キーボードを叩く人、
-          ただコーヒーと向き合う人。
-        </p>
-        <p>
-          同じ空間にいながら、
-          それぞれの時間が流れています。
-        </p>
-      </div>
-
-      <!-- Right Images -->
-      <div class="community-gallery">
-        <img src="img/community1.jpg" alt="作業する男性">
-        <img src="img/community2.jpg" alt="キーボードとコーヒー">
-        <img src="img/community3.jpg" alt="夜のカフェで作業">
-        <img src="img/community4.jpg" alt="静かなテーブル">
-      </div>
-
-    </div>
-
-    <div class="community-bottom">
-      <p class="community-copy">
-        Tonight, after 6.
-      </p>
-      <p class="community-sub">
-        あなたの時間が、ここで深まる。
-      </p>
-    </div>
-
-  </div>
-</section>
-
-    
-  <!-- ===== Access ===== -->
-<section id="access" class="access">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Access</h2>
-      <span class="line"></span>
-    </div>
-
-    <div class="access-inner">
-
-      <!-- Info -->
-      <div class="access-info">
-        <h3>AFTER 6</h3>
-
-        <p>〒810-0001<br>
-        福岡県福岡市中央区◯◯ 1-2-3</p>
-
-        <p>TEL : 090-0000-0000</p>
-
-        <div class="access-hours">
-          <p>OPEN 18:00 - 24:00</p>
-          <p>Last Order 23:30</p>
-          <p>定休日：火曜日</p>
-        </div>
-      </div>
-
-      <!-- Map -->
-      <div class="access-map">
-        <iframe 
-          src="https://maps.google.com/maps?q=福岡&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-    </div>
-
-    <div class="access-bottom">
-      <p>Tonight, after 6.</p>
-    </div>
-
-  </div>
-</section>
-
-  </main>
-
- 
- <!-- ===== Footer ===== -->
-<footer class="footer">
-  <div class="container">
-
-    <div class="footer-inner">
-
-      <!-- Left -->
-      <div class="footer-brand">
-        <h3>AFTER 6</h3>
-        <p>Tonight, after 6.</p>
-      </div>
-
-      <!-- Center -->
-      <div class="footer-nav">
-        <a href="#concept">Concept</a>
-        <a href="#space">Space</a>
-        <a href="#menu">Menu</a>
-        <a href="#community">Community</a>
-        <a href="#access">Access</a>
-      </div>
-
-      <!-- Right -->
-      <div class="footer-sns">
-        <a href="#" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-          Instagram
-        </a>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 AFTER 6. All Rights Reserved.</p>
-    </div>
-
-  </div>
+<!-- ================= Footer ================= -->
+<footer>
+  <div class="footer-logo">Cafe Terrace</div>
+  <p class="copyright">
+    © 2026 Cafe Terrace
+  </p>
 </footer>
 
-  <!-- ここまでがHTML本体 -->
-
-
 <script src="script.js"></script>
-
 </body>
 </html>
-
